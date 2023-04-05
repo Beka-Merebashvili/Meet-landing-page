@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* styles for mobile */
+
+body {
+    padding-top: 50px;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side , .right-side {
+    display: none;
+}
+.hero-img {
+    width: 360px;
+    height: 152px;
+    margin: 56px 0 48px 0;
+}
+.hero-img img {
+    width: 100%;
+}
+.group-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #28283D;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    width: 326px;
+    height: 88px;
+    text-align: center;
+}
+.description {
+    color: #87879D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 326px;
+    text-align: center;
+    margin: 24px 0 32px 0;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+button {
+    border-radius: 29px;
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #ffffff;
+}
+.download {
+    width: 192px;
+    height: 58px;
+    background: #4D96A9;
+}
+span {
+    color: #8FE3F9;
+}
+.question {
+    width: 140px;
+    height: 58px;
+    background: #855FB1;
+}
+.part1 {
+    width: 56px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0 64px 0;
+}
+.line {
+    width: 1px;
+    height: 84px;
+    background: #87879D;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+.circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number1 {
+   color: #87879D;
+   font-size: 16px;
+   font-weight: 900;
+   line-height: 26px;
+}
+.photos {
+    width: 328px;
+    height: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-bottom: 56px;
+}
+.img-box {
+    width: 150px;
+    height: 142px;
+    background: #D8D8D8;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.meetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modern {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #28283D;
+    width: 326px;
+    text-align: center;
+    margin: 24px 0 32px 0;
+}
+.messages {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #87879D;
+    width: 326px;
+    text-align: center;
+    margin-bottom: 176px;
+}
+.bg {
+    width: 100%;
+    height: 428px;
+    background: #4D96A9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    position: relative;
+    background-image: url(../starter-code/assets/mobile/image-footer.jpg);
+    background-size: cover;
+}
+.part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -114px;
+    left: calc(50% - 28px) ;
+}
+.circle2 {
+    background-color: #ffffff;
+}
+.wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 92px;
+}
+h3 {
+    color: #FAFAFA;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    width: 326px;
+    text-align: center;
+}
+.footer-text {
+    color: #FAFAFA;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 326px;
+    text-align: center;
+    margin: 24px 0 32px 0;
+}
+.btn2 {
+    background: #855FB1;
+}
+.btn2 span {
+   color:  #D9B8FF;
+}
+
+
+/* styles for tablet */
+
+
+@media only screen and (min-width: 768px) {
+    .hero-img {
+        width: 768px;
+        height: 302px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+        width: 340px;
+    }
+    .description {
+       width: 458px; 
+    }
+    .btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .part1 {
+        margin: 80px 0 68px 0;
+    }
+    .photos {
+        width: 690px;
+        height: 156px;
+        gap: 10px;
+    }
+    .img-box {
+        width: 164px;
+        height: 156px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 44px;
+        width: 444px;
+        text-align: center;
+    }
+    .messages {
+        width: 572px;
+    }
+    .footer {
+        background-image: url(../starter-code/assets/tablet/image-footer.jpg);
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 44px;
+        width: 456px;
+    }
+    .footer-text {
+        width: 574px;
+    }
+}
+
+
+/* styles for desktop */
+
+
+@media only screen and (min-width: 1440px) {
+    body {
+        padding-top: 84px;
+    }
+    .logo {
+        margin-bottom: 110px;
+    }
+    .hero-img {
+        display: none;
+    }
+    .left-side {
+        display: block;
+        position: absolute;
+        top: 170px;
+        left: -30px;
+    }
+    .right-side {
+        display: block;
+        position: absolute;
+        top: 224px;
+        right: 0px;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+        width: 446px;
+        margin-bottom: 34px;
+    }
+    .description {
+        width: 540px;
+    }
+    .download:hover {
+        background: #71C0D4;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .question:hover {
+        background: #B18BDD;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .part1 {
+        margin: 116px 0 64px 0;
+    }
+    .photos {
+        width: 1110px;
+        height: 242px;
+        gap: 30px;
+    }
+    .img-box {
+        width: 254px;
+        height: 242px;
+    }
+    .messages {
+        width: 540px;
+    }
+    .bg {
+        height: 308px;
+    }
+    .footer {
+        background-image: url(../starter-code/assets/desktop/image-footer.jpg);
+    }
+    .wraper {
+        flex-direction: row;
+        gap: 124px;
+
+    }
+    h3 , .footer-text{
+        width: 380px;
+        text-align: start;
+    }
+    .btn2:hover {
+        background: #B18BDD;
+    }
+}
